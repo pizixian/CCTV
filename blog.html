@@ -1,0 +1,184 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-09-21 19:26:19
+ * @LastEditTime: 2020-10-07 17:56:04
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \04-jq-ajaxd:\AAA\VS_Code\移动端\after\04-移动布局\央视\after.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G客G拍</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <script src="./js/swiper-4.1.6.min.js"></script>
+    <script src="./js/touch-0.2.14.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <style>
+        html {font-size: 100px}
+        body {font-size: 0.16rem;}
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <span></span>
+        CCTV手机电视
+        <span></span>
+    </div>
+    <!-- 导航 -->
+    <div class="nav-list">
+        <ul>
+            <li>新闻</li>
+            <li>体育</li>
+            <li>热剧</li>
+            <li>电影</li>
+            <li>娱乐</li>
+            <li>直播</li>
+            <li class="liColor">G客</li>
+            <li>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+    <!-- 轮播 -->
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/gk图层14.png" alt="1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/gk图层14-1.jpg" alt="2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/gk图层14-2.jpg" alt="3">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="main_bottom">
+                <span>G客大师由你做主</span>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 娱乐首页 -->
+    <div class="hotTV">
+        <ul>
+            <li class="liColor">娱乐首页</li>
+            <li>独家专享</li>
+            <li>G客片库</li>
+            <li>G客大赛</li>
+            <li>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 娱乐首页2 -->
+    <div class="hot-list">
+        <div class="hot-list-l">
+            <img src="./images/gk图层16副本4.png" alt="">
+            <span>娱乐大咖秀</span>
+        </div>
+        <div class="hot-list-r">
+            <img src="./images/gk图层17副本4.png" alt="">
+            <span>我最爱的电影</span>
+        </div>
+    </div>
+    <!-- 动漫搞笑 -->
+    <div class="cold">
+        <div class="cold_top">
+            <span>动漫搞笑</span>
+            <span>更多>></span>
+        </div>
+        <div class="cold_bottom">
+            <div>
+                <img src="./images/gk图层41副本.png" alt="">
+                <span>东京食种</span>
+            </div>
+            <div>
+                <img src="./images/gk图层42副本.png" alt="">
+                <span>疯狂兔兔</span>
+            </div>
+            <div>
+                <img src="./images/gk图层43副本.png" alt="">
+                <span>海贼王</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- 剧情 -->
+    <div class="cold">
+        <div class="cold_top">
+            <span>剧情</span>
+            <span>更多>></span>
+        </div>
+        <div class="cold_bottom">
+            <div>
+                <img src="./images/gk图层38副本.png" alt="">
+                <span>栀子花开</span>
+            </div>
+            <div>
+                <img src="./images/gk图层39副本.png" alt="">
+                <span>小时代</span>
+            </div>
+            <div>
+                <img src="./images/gk图层40副本.png" alt="">
+                <span>杨贵妃</span>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
+<!-- 自适应 -->
+<script src="./js/republic.js"></script>
+<script>
+    // 导航
+   /*  $('.nav-list li').on('click',function(){
+        $('.nav-list li').removeClass('liColor');
+        $(this).addClass('liColor');
+    }); */
+
+    touch.on($('.nav-list li').not('.nav-list li:last-child'),'tap',function(){
+        $('.nav-list li').removeClass('liColor');
+        $(this).addClass('liColor');
+    });
+    // 娱乐首页
+    /* $('.hotTV li').on('click',function(){
+        $('.hotTV li').removeClass('liColor');
+        $(this).addClass('liColor');
+    }); */
+
+    touch.on($('.hotTV li').not('.hotTV li:last-child'),'tap',function(){
+        $('.hotTV li').removeClass('liColor');
+        $(this).addClass('liColor');
+    });
+    
+    var mySwiper = new Swiper('.swiper-container', {
+        initialSlide:1, //默认显示图片
+        direction: 'horizontal', // 水平切换选项
+        effect : 'fade', //切换效果
+        loop: true, // 循环模式选项
+        speed:500, //动画时间
+        autoplay: {
+            delay: 1800,
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    })
+
+</script>

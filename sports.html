@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>体育</title>
+    <link rel="stylesheet" href="./css/sports.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <script src="./js/swiper-4.1.6.min.js"></script>
+    <script src="./js/touch-0.2.14.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <style>
+        html {font-size: 100px}
+        body {font-size: 0.16rem;width: 6.4rem;}
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <span></span>
+        CCTV手机电视
+        <span></span>
+    </div>
+    <!-- 导航 -->
+    <div class="nav-list">
+        <ul>
+            <li>首页</li>
+            <li>新闻</li>
+            <li class="liColor">体育</li>
+            <li>热剧</li>
+            <li>电影</li>
+            <li>娱乐</li>
+            <li>直播</li>
+            <li>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+    <!-- 轮播 -->
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/图层29.png" alt="1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/图层37.png" alt="2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/图层38.png" alt="3">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="main_bottom">
+                <span>CCTV体育赛事高清频道</span>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 赛事直播 -->
+    <div class="hot-list">
+        <div class="hot-list_top">
+            <span>赛事直播</span>
+            <span>更多>></span>
+        </div>
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <span>
+                11.10 08:00<br>
+                NBA常规赛
+            </span>
+            <span></span>
+        </div>
+    </div>
+    <!-- 今日热点 -->
+    <div class="cold">
+        <div class="cold_top">
+            <span>今日热点-11月9日</span>
+            <span>更多>></span>
+        </div>
+        <div class="cold_bottom">
+            <div>   
+               <span>詹皇29分乔治32+11骑士擒步行者迎6连胜</span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <!-- 全景NBA -->
+    <div class="NBA">
+        <div class="NBA_top">
+            <span>全景NBA</span>
+            <span>更多>></span>
+        </div>
+        <div class="NBA_bottom">
+            <div>   
+               <span>詹皇29分乔治32+11骑士擒步行者迎6连胜</span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+            <div>
+                <span>
+                    詹皇29分乔治32+11骑士擒步行者<br>
+                    迎6连胜
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
+<!-- 自适应 -->
+<script src="./js/republic.js"></script>
+<script>
+    // 导航
+   /*  $('.nav-list li').on('click',function(){
+        $('.nav-list li').removeClass('liColor');
+        $(this).addClass('liColor');
+    }); */
+
+    touch.on($('.nav-list li').not('.nav-list li:last-child'),'tap',function(){
+        $('.nav-list li').removeClass('liColor');
+        $(this).addClass('liColor');
+    });
+    // 娱乐首页
+    /* $('.hotTV li').on('click',function(){
+        $('.hotTV li').removeClass('liColor');
+        $(this).addClass('liColor');
+    }); */
+
+    touch.on($('.hotTV li').not('.hotTV li:last-child'),'tap',function(){
+        $('.hotTV li').removeClass('liColor');
+        $(this).addClass('liColor');
+    });
+    
+    var mySwiper = new Swiper('.swiper-container', {
+        initialSlide:1, //默认显示图片
+        direction: 'horizontal', // 水平切换选项
+        effect : 'fade', //切换效果
+        loop: true, // 循环模式选项
+        speed:500, //动画时间
+        autoplay: {
+            delay: 1800,
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    })
+
+</script>

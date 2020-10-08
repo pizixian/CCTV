@@ -1,0 +1,79 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-08 18:20:08
+ * @LastEditTime: 2020-10-08 18:59:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \04-jq-ajaxd:\AAA\VS_project\移动端\央视\video.html
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视频</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <script src="./js/republic.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/touch-0.2.14.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="h_l">
+            <ul>
+                <li></li>
+                <li>奔跑吧兄弟 第八期</li>
+            </ul>
+        </div>
+        <div class="h_r">
+            <ul>
+                <li id="share"><img src="./images/icon_detail_share@2x.png" alt=""></li>
+                <li>刷新</li>
+                <li>收藏</li>
+                <li>节目单</li>
+                <li>换台</li>
+             </ul>
+        </div>
+    </div>
+
+    <!-- 视频展示区域 -->
+    <div class="video">
+        <video>
+            <source src="./video/mi.mp4">
+        </video>
+    </div>
+    <!-- 自定义控件 -->
+    <div class="mycon">
+        <ul>
+            <li class="play"></li>
+            <li class="next"></li>
+            <li class="s_time">00:00</li>
+            <li class="jdt">
+                <div class="s_jdt">
+                   <img src="./images/btn_pindao_tiyu.png" alt="">
+                </div>
+            </li>
+            <li class="e_time">00:00</li>
+            <li>标清</li>
+            <li>选集</li>
+        </ul>
+    </div>
+    <!-- 点击分享 -->
+    <div class="share">
+        <ul>
+            <li><img src="./images/share_weixin.png" alt=""></li>
+            <li><img src="./images/share_pengyouquan.png" alt=""></li>
+            <li><img src="./images/share_qq.png" alt=""></li>
+            <li><img src="./images/share_qzone.png" alt=""></li>
+            <li><img src="./images/share_weibo.png" alt=""></li>
+            <li><img src="./images/share_sina.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+<script src="./js/video.js"></script>
+</html>

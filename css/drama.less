@@ -1,0 +1,108 @@
+
+body {
+    font-size: 0.16rem;
+}
+
+/* 导航 */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .nav_t {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.36rem 0.26rem 0.23rem 0.22rem;
+    font-size: 0.24rem;
+}
+
+nav .nav_t img:nth-of-type(1) {
+    width: 0.18rem;
+    height: 0.3rem;
+}
+
+nav .nav_t img:nth-of-type(2) {
+    width: 0.31rem;
+    height: 0.34rem;
+}
+
+nav .nav_line {
+    width: 100%;
+}
+
+nav .nav_line>img {
+    width: 6.4rem;
+    height: 0.04rem;
+}
+
+/* 选项 */
+.options{
+    font-size: 0.22rem;
+    
+    ul{
+        margin-left: 0.05rem;
+        margin-top: 0.07rem;
+        li{
+            overflow: hidden;
+          
+        }
+        li>a{
+            float: left;
+            width: 1.18rem;
+            height: 0.4rem;
+            color: #666666; 
+            border: #dedede 0.01rem solid;
+            text-align: center;
+            line-height: 0.4rem;
+            border-radius: 0.2rem;
+            margin-left: 0.05rem;
+            margin-top: 0.13rem;
+        }
+        .first{
+            color: #246cff;
+            background-color: #f5f5f5;
+        }
+    }
+}
+
+/* 列表 */
+.list{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            width: 1.96rem;
+            margin-left: 0.1rem;
+            img{
+                width: 1.96rem;
+                height: 2.94rem;
+            }
+            p:nth-of-type(1){
+                position: relative;
+                top:-0.2rem;
+                width: 100%;
+                color:white;
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.5);
+                span:nth-of-type(1){
+                    float: left;
+                    margin-left: 0.05rem;
+                }
+                span:nth-of-type(2){
+                    float: right;
+                    margin-right: 0.05rem;
+                    color:#ff7000
+                }
+            }
+            p:nth-of-type(2){
+                font-size: 0.18rem;
+                position: relative;
+                top: -0.1rem;
+            }
+        }
+    }
+   
+}

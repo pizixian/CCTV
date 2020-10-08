@@ -1,0 +1,131 @@
+body {
+  font-size: 0.16rem;
+  height: 1rem;
+}
+/* 头部 */
+.header {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 0.42rem;
+  line-height: 0.42rem;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+.header .h_l {
+  float: left;
+  line-height: 0.42rem;
+  position: relative;
+  bottom: 0.02rem;
+  overflow: hidden;
+}
+.header .h_l ul > li:first-child {
+  float: left;
+  transform: rotate(180deg);
+  width: 0.14rem;
+  height: 0.3rem;
+  margin-top: 0.06rem;
+  margin-left: 0.1rem;
+  background: url(../images/btn_leftmenu_you_jiantou@3x.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.header .h_l ul > li:last-child {
+  float: left;
+  margin-left: 0.15rem;
+  font-size: 0.14rem;
+  color: white;
+}
+.header .h_r {
+  float: right;
+  line-height: 0.42rem;
+}
+.header .h_r ul {
+  margin-right: 0.1rem;
+}
+.header .h_r ul li {
+  float: left;
+  font-size: 0.14rem;
+  color: white;
+  margin-right: 0.1rem;
+}
+.header .h_r ul li img {
+  width: 0.25rem;
+  height: 0.25rem;
+  margin-top: 0.08rem;
+}
+video {
+  width: 100%;
+}
+/* 自定义控件 */
+.mycon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.mycon ul {
+  display: flex;
+  align-items: center;
+}
+.mycon ul li {
+  margin-left: 0.15rem;
+}
+.mycon ul .play {
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(../images/play.png) no-repeat center center;
+}
+.mycon ul .pause {
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(../images/pause.png) no-repeat center center;
+}
+.mycon ul .next {
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(../images/next.png) no-repeat center center;
+}
+.mycon ul .jdt {
+  width: 3rem;
+  height: 0.02rem;
+  background-color: #ccc;
+}
+.mycon ul .jdt .s_jdt {
+  position: relative;
+  width: 0;
+  height: 0.02rem;
+  background: blue;
+}
+.mycon ul .jdt .s_jdt img {
+  width: 0.1rem;
+  height: 0.1rem;
+  position: absolute;
+  right: 0;
+  top: -0.04rem;
+}
+/* 点击分享 */
+.share {
+  display: none;
+  width: 2rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.share ul {
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.share ul li {
+  float: left;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+.share ul li img {
+  width: 0.45rem;
+  height: 0.45rem;
+}

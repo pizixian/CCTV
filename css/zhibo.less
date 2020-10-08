@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 0.16rem;
+    height: 100%;
+}
+
+/* 导航栏 */
+nav {
+    display: flex;
+    flex-direction: column;
+
+    .nav_t {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.36rem 0.26rem 0.23rem 0.22rem;
+        font-size: 0.24rem;
+
+        img:nth-of-type(1) {
+            width: 0.36rem;
+            height: 0.28rem;
+        }
+
+        img:nth-of-type(2) {
+            width: 0.31rem;
+            height: 0.34rem;
+        }
+    }
+
+    .nav_line {
+        width: 100%;
+    }
+
+    .nav_line>img {
+        width: 6.4rem;
+        height: 0.04rem;
+
+    }
+
+    .nav_b {
+        margin-top: 0.25rem;
+    }
+
+    .nav_b>ul {
+        display: flex;
+        font-size: 0.24rem;
+        margin-left: 0.2rem;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        li {
+            padding-bottom: 0.2rem;
+        }
+
+        li>img {
+            width: 0.22rem;
+            height: 0.13rem;
+        }
+
+        //li_line,用于切换下划线类名
+        .li_line {
+            border-bottom: 0.04rem solid #246cff;
+        }
+
+        .li_line>a {
+            color: #246cff;
+
+        }
+    }
+}
+
+/* 主体左边 */
+.main {
+    display: flex;
+    border-top: solid 0.01rem #dedede;
+    height: 9.35rem;
+    .m_l {
+        flex: 2;
+        font-size: 0.2rem;
+        background-color: #f3f3f3;
+
+        ul {
+            background-color: #f3f3f3;
+        }
+
+        ul>li {
+            margin: 0.2rem 0rem 0rem 0rem;
+            padding: 0.08rem 0.25rem 0.08rem 0.15rem;
+        }
+
+        /* 控制颜色及右边框 */
+        .li_color {
+            color: blue;
+            border-right: 0.03rem solid blue;
+        }
+
+        .li_color>a {
+            color: blue;
+        }
+    }
+
+    .m_r {
+        flex: 8;
+        >div:last-child {
+            border: 0;
+        }
+        .m_r_one {
+            display: flex;
+            height: 1.5rem;
+            border-bottom: solid 0.01rem #dedede;
+            //   padding-bottom: 0.1rem;
+            img {
+                width: 2rem;
+                height: 1.4rem;
+                margin: 0rem 0rem 0.1rem 0.12rem;
+            }
+
+            .img {
+                margin-top: 0.07rem;
+            }
+
+            .texts>h2 {
+                font-size: 0.24rem;
+                margin: 0.25rem 0rem 0rem 0.15rem;
+            }
+
+            .texts>p {
+                color: #666;
+                font-size: 0.18rem;
+                margin: 0.15rem 0rem 0rem 0.12rem;
+            }
+        }
+    }
+}

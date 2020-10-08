@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.16rem;
+    width: 6.4rem;
+    // height: 1600px;
+}
+
+// 头部-------------------------------------------------
+.head {
+    height: 1.25rem;
+    font-size: 0.29rem;
+    text-align: center;
+    // line-height: 1.25rem;
+    padding-top: 0.65rem;
+    overflow: hidden;
+    position: relative;
+
+    background: url('../images/icon_heng_line@2x.png') no-repeat center bottom;
+    background-size: 100% auto;
+
+    span {
+        display: inline-block;
+        position: absolute;
+
+    }
+
+    span:nth-child(1) {
+        width: 0.36rem;
+        height: 0.3rem;
+        top: 0.69rem;
+        left: 0.2rem;
+        background: url('../images/arrow-back@2x.png') no-repeat;
+        background-size: 0.17rem 0.3rem;
+    }
+
+    span:nth-child(2) {
+        width: 0.32rem;
+        height: 0.34rem;
+        top: 0.63rem;
+        right: 0.2rem;
+        background: url('../images/icon_search@2x.png') no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+// 视频
+video {
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+    height: 3.2rem;
+}
+
+// 视频详情
+.video_details {
+    padding: 0.17rem 0.15rem 0 0.15rem;
+    overflow: hidden;
+
+    .video_details_main {
+        border-bottom: 0.01rem solid #adadad;
+        padding-bottom: 0.18rem;
+
+        span {
+            display: inline-block;
+        }
+
+        >span:nth-of-type(1) {
+            font-size: 0.24rem;
+            margin-bottom: 0.2rem;
+        }
+
+        >span:nth-of-type(2) {
+            color: #adadad;
+            font-size: 0.18rem;
+            margin-bottom: 0.15rem;
+        }
+
+        >span:nth-of-type(3) {
+            color: #adadad;
+            margin-top: 0.1rem;
+        }
+
+        >span:nth-of-type(4) {
+            margin-top: 0.1rem;
+            color: #adadad;
+        }
+
+        >div {
+            margin-top: 0.47rem;
+            overflow: hidden;
+            line-height: 0.23rem;
+
+            span:nth-of-type(1) {
+                font-size: 0.23rem;
+                float: left;
+            }
+
+            span:nth-of-type(2) {
+                float: right;
+                color: #adadad;
+                font-size: 0.17rem;
+                padding-right: 0.26rem;
+                background: url('../images/arrow_go01@2x.png') no-repeat right center;
+                background-size: 0.16rem 0.23rem;
+            }
+        }
+    }
+
+    // 剧集
+    ul {
+        list-style: none;
+        margin-top: 0.28rem;
+        margin-bottom: 0.57rem;
+        overflow: hidden;
+        width: 750px;
+
+        li {
+            float: left;
+            border: 0.01rem solid #dedede;
+            width: 0.73rem;
+            height: 0.73rem;
+            font-size: 0.2rem;
+            text-align: center;
+            line-height: 0.73rem;
+            background-color: rgb(245, 249, 252);
+            margin-right: 0.14rem;
+        }
+    }
+}
+
+// 精彩视频大集合
+.wonderful {
+
+    .wonderful_top {
+        border-bottom: 0.01rem solid #adadad;
+        padding-bottom: 0.15rem;
+        margin-bottom: 0.13rem;
+        overflow: hidden;
+        line-height: 0.29rem;
+
+        span:nth-of-type(1) {
+            float: left;
+            font-size: 0.24rem;
+            padding-left: 0.18rem;
+            margin-left: 0.2rem;
+            background: url('../images/icon-tit-tbiao@2x.png') no-repeat;
+            background-size: 0.06rem 0.29rem;
+
+        }
+
+        span:nth-of-type(2) {
+            float: right;
+            font-size: 0.17rem;
+            padding-right: 0.26rem;
+            margin-right: 0.16rem;
+            background: url('../images/arrow_go01@2x.png') no-repeat right center;
+            background-size: 0.16rem 0.23rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0.2rem;
+        overflow: hidden;
+        margin-bottom: 0.58rem;
+
+        li {
+            float: left;
+            margin-right: 0.1rem;
+
+            >div {
+                width: 1.96rem;
+                height: 1.31rem;
+                margin-bottom: 0.1rem;
+                position: relative;
+
+                >span {
+                    display: inline-block;
+                    width: 0.86rem;
+                    height: 0.24rem;
+                    color: #fff;
+                    font-size: 0.12rem;
+                    text-align: center;
+                    line-height: 0.24rem;
+                    background-color: #000;
+                    opacity: 0.6;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            >span {
+                color: #333333;
+                font-size: 0.16rem;
+            }
+        }
+
+        li:nth-of-type(1) {
+            >div {
+                background: url('../images/图层44.png') no-repeat;
+                background-size: 1.96rem 100%;
+            }
+
+        }
+        li:nth-of-type(2) {
+            >div {
+                background: url('../images/图层45.png') no-repeat;
+                background-size: 1.96rem 100%;
+            }
+
+        }
+
+        li:nth-of-type(3) {
+            >div {
+                background: url('../images/图层46.png') no-repeat;
+                background-size: 1.96rem 100%;
+            }
+
+        }
+    }
+
+}
+
+// 推荐
+.recommend {
+
+    .recommend_top {
+        border-bottom: 0.01rem solid #adadad;
+        padding-bottom: 0.15rem;
+        margin-bottom: 0.13rem;
+        overflow: hidden;
+        line-height: 0.29rem;
+
+        span:nth-of-type(1) {
+            float: left;
+            font-size: 0.24rem;
+            padding-left: 0.18rem;
+            margin-left: 0.2rem;
+            background: url('../images/icon-tit-tbiao@2x.png') no-repeat;
+            background-size: 0.06rem 0.29rem;
+
+        }
+
+        span:nth-of-type(2) {
+            float: right;
+            font-size: 0.17rem;
+            padding-right: 0.26rem;
+            margin-right: 0.16rem;
+            background: url('../images/arrow_go01@2x.png') no-repeat right center;
+            background-size: 0.16rem 0.23rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0.2rem;
+        overflow: hidden;
+        margin-bottom: 0.58rem;
+
+        li {
+            float: left;
+            margin-right: 0.1rem;
+
+            >div {
+                width: 1.96rem;
+                height: 1.31rem;
+                background: url('../images/图层47.png') no-repeat;
+                background-size: auto 100%;
+                margin-bottom: 0.1rem;
+                position: relative;
+
+                span {
+                    display: inline-block;
+                    width: 0.86rem;
+                    height: 0.24rem;
+                    color: #fff;
+                    font-size: 0.12rem;
+                    text-align: center;
+                    line-height: 0.24rem;
+                    background-color: #000;
+                    opacity: 0.6;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            >span {
+                color: #333333;
+                font-size: 0.18rem;
+            }
+        }
+
+        li:nth-of-type(2) {
+            >div {
+                background: url('../images/图层48.png') no-repeat;
+                background-size: auto 100%;
+            }
+        }
+
+        li:nth-of-type(3) {
+            >div {
+                background: url('../images/图层47.png') no-repeat;
+                background-size: auto 100%;
+            }
+        }
+    }
+
+}
+
+// 网友评论
+.comment {
+    .comment_top {
+        border-bottom: 0.01rem solid #adadad;
+        padding-bottom: 0.15rem;
+        margin-bottom: 0.13rem;
+        overflow: hidden;
+        line-height: 0.29rem;
+
+        span:nth-of-type(1) {
+            float: left;
+            font-size: 0.24rem;
+            padding-left: 0.18rem;
+            margin-left: 0.2rem;
+            background: url('../images/icon-tit-tbiao@2x.png') no-repeat;
+            background-size: 0.06rem 0.29rem;
+
+        }
+
+        span:nth-of-type(2) {
+            float: right;
+            color: #b3b3b3;
+            font-size: 0.17rem;
+            margin-right: 0.16rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0.2rem;
+        margin-bottom: 0.58rem;
+
+        li {
+            >div:nth-of-type(1) {
+                margin-bottom: 0.13rem;
+                overflow: hidden;
+                line-height: 0.5rem;
+                
+                span:nth-of-type(1) {
+                    color: #0055aa;
+                    float: left;
+                    font-size: 0.18rem;
+                    padding-left: 0.6rem;
+                    background: url('../images/btn_pinglun_touxiang@2x.png') no-repeat;
+                    background-size: 0.5rem 0.5rem;
+
+                }
+
+                span:nth-of-type(2) {
+                    float: right;
+                    color: #b3b3b3;
+                    font-size: 0.17rem;
+                    margin-right: 0.16rem;
+                }
+            }
+
+            >span {
+                display: inline-block;
+                color: #666;
+                font-size: 0.18rem;
+                margin-bottom: 0.13rem;
+                // margin-left: 0.1rem;
+                // margin-right: 0.1rem;
+            }
+            >div:nth-of-type(2) {
+                overflow: hidden;
+                margin-right: 0.2rem;
+                span {
+                    float: left;
+                    color: #9a9a9a;
+                    font-size: 0.18rem;
+                    line-height: 0.44rem;
+                }
+                button {
+                    float: right;
+                    width: 0.8rem;
+                    height: 0.44rem;
+                    border: 0;
+                    outline: none;
+                }
+                button:nth-of-type(2) {
+                    background: url('../images/icon_pinglun_button@2x.png') no-repeat center center;
+                    background-size: auto 100%;
+                    margin-right: 0.06rem;
+                }
+                button:nth-of-type(1) {
+                    background: url('../images/icon_zan_button@2x.png') no-repeat center center;
+                    background-size: auto 100%;
+                }
+            }
+        }
+        li:nth-of-type(1) {
+            border-bottom: 0.01rem solid #adadad;
+            padding-bottom: 0.06rem;
+            margin-bottom: 0.35rem;
+        }
+        li:nth-of-type(2) {
+            margin-bottom: 0.54rem;
+        }
+    }
+}
+// 写评价
+.comment_bottom {
+    background-color: rgb(245,245,245);
+    height: 0.88rem;
+    position: relative;
+    >div {
+        width: 6.03rem;
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        input {
+            float: left;
+            width: 3.92rem;
+            height: 0.44rem;
+            font-size: 0.16rem;
+            border-radius: 0.16rem;
+            border: solid 0.01rem #dadada;
+            background:#fff url('../images/icon_write_pinglun@2x.png') no-repeat 0.17rem center;
+            background-size: 0.3rem 0.28rem;
+            padding-left: 0.57rem;
+            outline: none;
+        }
+        span {
+            float: left;
+            width: 0.45rem; 
+            height: 0.45rem;
+        }
+        span:nth-of-type(1) {
+            background: url('../images/icon_detail_share@2x.png') no-repeat;
+            background-size: 0.45rem 0.45rem;
+            margin-left: 0.3rem;
+        }
+        span:nth-of-type(2) {
+            background: url('../images/icon_detail_xiazai@2x.png') no-repeat;
+            background-size: 0.45rem 0.45rem;
+            margin-left: 0.2rem;
+        }
+        span:nth-of-type(3) {
+            background: url('../images/icon_detail_jiaru@2x.png') no-repeat;
+            background-size: 0.45rem 0.45rem;
+            margin-left: 0.2rem;
+        }
+    }
+}
